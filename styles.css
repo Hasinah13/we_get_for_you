@@ -1,0 +1,317 @@
+* { box-sizing: border-box; } /* Contenu + Padding + Border */
+body{
+	margin: 0;
+}
+.contenaire{
+	width: 1200px;
+	margin:0 auto;
+}
+/*=======================
+		logo
+=======================*/
+div.logo{
+	text-transform: uppercase;
+	float: left;
+	padding-top: 5px;
+	font-size: 44px;
+	color: #001221;
+	font-family: Montserrat;
+	font-weight:700;
+}
+/*=======================
+		nav
+=======================*/
+nav li{
+	display: inline-block;
+	margin: 20px;
+	text-decoration: none;
+}
+nav{
+	margin-left:603px;
+}
+nav a{
+	text-decoration: none;
+}
+/*=======================
+	les liens a
+=======================*/
+a{
+	text-decoration: none;
+	font-size: 18px;
+	color: #b3b3b3;
+	font-family:Poppins;
+	font-weight: 700;
+	position: relative;
+}
+/*=======================
+	la ligne qui bouge
+=======================*/
+.liste a::after{ 
+	content:"";
+	display:block;
+	width:0;
+	height:2px;
+	background:#000;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	transition: 300ms;
+}
+/*pour le underline pour ca reste active*/
+.liste a:hover::after,
+.liste a.active:after{ 
+	width: 100%;
+	left: 0;
+
+}
+a:hover{
+	color:#000;
+}
+
+/*=======================
+		menu
+=======================*/
+.menu{
+	width: 50px;
+	height: 50px;
+	position: relative;
+	float: right;
+	margin-top: -70px;
+	margin-right:40px;
+	transition: 0.5ms;
+}
+.menu span{
+	display: block;
+	width: 80%;
+	height: 3px;
+	background: #000;
+}
+.line1{
+	position: absolute;
+	width: 100%;
+	left: 10%;
+	top: 16px;
+	transition: 300ms;;
+}
+.menu .line2{
+	position: absolute;
+	right:10%;
+	top: 24px;
+	width: 60%;
+	transition: 300ms;
+}
+.line3{position: absolute;
+	width: 100%;
+	left: 10%;
+	top: 32px;	
+}
+.menu:hover .line2{
+	transform: rotate(90deg);
+}
+/*.line2:hover{
+	width: 80%;
+	transform: rotate(90deg);
+}*/
+section{
+	background: #f8f8f8;
+	width: 100%;
+}
+/*=======================
+		liste
+=======================*/
+.liste li{
+	display: inline-block;
+	margin-right:20px;
+	float: left;
+	font-family: Poppins;
+	font-weight: 400;
+}
+.liste a {
+	font-size: 16px;
+	font-family: Poppins;
+	font-weight: 400;
+
+}
+.liste ul{
+	padding: 0;
+	margin: 0;
+	padding-top: 100px;
+    margin-bottom: -30px;
+}
+.active{
+	color: #000;
+}
+.liste a.active:hover::after { 
+	width: 100%;
+	left: 0;
+}
+/*================================
+		les h
+=================================*/
+h1{margin-top: 150px;
+	font-size: 63px;
+	color: #001221;
+	font-family:Poppins;
+	font-weight: 700;
+	line-height:72px;
+}
+footer h3{
+	padding-top:20px;
+	position: absolute;
+    left: 49%;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 44px;
+}
+/*======================================
+	le h2 qui est au milieux de la photo
+========================================*/
+h2{
+	position: absolute;
+	margin-top: -60px;
+	font-size: 14px;
+	font-family: Poppins;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-left: 8%;
+	color: #fff;
+	background-color: #000;
+	padding: 5px 20px;
+	display: none;	
+}
+
+h2.active{
+	position: absolute;
+	margin-top: -60px;
+	font-size: 14px;
+	font-family: Poppins;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-left: 8%;
+	color: #fff;
+	background-color: #000;
+	padding: 5px 20px;
+	display: inline;	
+}
+
+.itemes:hover h2{
+	display: inline;
+	transform: scale(1.2);	
+}
+/*=======================
+		pharagraphe
+=======================*/
+p{
+	font-size: 16px;
+	color: #a4a3a9;
+	font-family: Lato;
+	font-weight:400;
+	margin-bottom: 100px;
+	line-height: 25px;
+}
+/*=======================
+		itemes
+=======================*/
+div.itemes{
+	width: 30%;
+	float: right;
+	box-shadow: 0px 0px 15px grey;
+	transition: all 0.8s ease-in-out ;
+		
+}
+div:hover.itemes{
+transform: scale(1.1);
+}
+.itemes{
+	position:relative;
+	background-color:#ededed;
+	margin: 20px;
+}
+
+.all-itemes{
+	margin-top: 100px;
+	clear: both;
+	margin-top: 100px;
+   	clear: both;
+    overflow: hidden;
+    width: calc(100% + 30px);
+    margin: 100px -15px 0;
+}
+img{
+	width: 100%;
+	display: block;
+}
+.itemes.active img{
+	width: 100%;
+	opacity: 0.1;
+}
+img:hover{
+	opacity: 0.1;
+	
+}
+/*=======================
+		button
+=======================*/
+button{
+	margin-top: 20px;
+	margin-left: 47%;
+	padding: 12px 24px;
+	text-transform: uppercase;
+	font-family: Poppins;
+	font-weight: 700;
+	font-size: 12px;
+	background-color:#ffffff;
+
+}
+/*=======================
+		section
+=======================*/
+section{
+	padding-bottom: 80px;
+}
+/*=======================
+		footer
+=======================*/
+footer .p2{
+	position: absolute;
+    left: 45%;
+    margin-top: 115px;
+}
+footer .p1{
+	position: absolute;
+	margin-top: 100px;
+}
+footer a{color: #000;
+	font-size: 16px;
+	font-family: Lato;
+	font-weight:400;
+}
+footer{
+	padding-bottom: 200px;
+}
+/*=======================
+	liens socieaux
+=======================*/
+i{
+	float: right;
+	margin-top: 100px;
+	margin-right:30px;
+	font-size: 17px;
+}
+/*=======================
+	liens socieaux
+=======================*/
+button{-webkit-appearance:none;
+		background-color:#ffffff;
+		transition: all ease-in-out 0.5s;
+	
+}
+button:hover{
+	transform: scale(1.2);	
+}
+
+
+
+
+
+
